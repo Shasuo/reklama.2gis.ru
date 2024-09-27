@@ -11,10 +11,7 @@ export const Header = () => {
   const router = useRouter();
 
   useEffect(() => {
-    const handleRouteChange = (url: string) => {
-      console.log("Страница изменена. Новый URL:", url);
-      setMobileMenuOpenState(false);
-    };
+    const handleRouteChange = () => setMobileMenuOpenState(false);
 
     router.events.on("routeChangeComplete", handleRouteChange);
 
