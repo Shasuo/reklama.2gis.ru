@@ -1,0 +1,11 @@
+@media (hover: hover) {
+  .item:hover {
+    color: #19aa1e;
+  }
+}
+
+@media (hover: none) {
+  .item:active {
+    color: #19aa1e;
+  }
+}

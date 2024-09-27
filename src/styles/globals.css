@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Suisse";
+  src:
+    url("/fonts/SuisseIntl-Regular.woff2") format("woff2"),
+    url("/fonts/SuisseIntl-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Suisse";
+  src:
+    url("/fonts/SuisseIntl-Medium.woff2") format("woff2"),
+    url("/fonts/SuisseIntl-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+.font-normal {
+  letter-spacing: -0.1px;
+}
+
+.font-medium {
+  letter-spacing: -0.05px;
+}
+
+body {
+  background: #f4f4f4;
+}
+
+main {
+  max-width: 1168px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.w-fit-important {
+  width: fit-content !important;
+}
+
+.mt-0-important {
+  margin-top: 0 !important;
+}
+
+.mainFormInput::placeholder {
+  color: #b6e4b8;
+}
+
+.aboutSliderBlock .swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  margin-left: 12px !important;
+  margin-right: 12px !important;
+  bottom: 0 !important;
+  top: unset !important;
+}
+
+.aboutSliderBlock .swiper-pagination-bullet-active {
+  background: #19aa1e !important;
+}
+
+.aboutSliderBlock .swiper {
+  padding-bottom: 150px !important;
+}
+
+@media (max-width: 1199px) {
+  main {
+    max-width: 344px;
+  }
+  .aboutSliderBlock .swiper {
+    padding-bottom: 50px !important;
+  }
+}
+
+@media (max-width: 350px) {
+  main {
+    max-width: calc(100% - 20px);
+  }
+}
