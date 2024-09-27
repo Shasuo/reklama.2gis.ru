@@ -13,7 +13,6 @@ cd reklama.2gis.ru
 npm i
 ```
 
-Проект развернут.
 
 
 ## Getting Started
