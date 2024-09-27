@@ -40,3 +40,10 @@ npm run build
 ```bash
 npm run start
 ```
+
+## Автотесты 
+
+```bash
+```
+
+Ожидаемый результат:
